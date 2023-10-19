@@ -5,39 +5,41 @@ object Global {
     val dataCerbung: Array<Cerbung> = arrayOf(
         Cerbung(
             1,
-            "Selamat Dari Tumbal Pesugihan",
-            "Aqila harus menghadapi kenyataan kehilangan anggota keluarganya satu-persatu, akibat pesugihan. Entah siapa yang tega melakukan itu. Dia hanya bisa bertahan, dan berusaha selamat dari jeratan pesugihan.",
+            "Misteri Lirikan Mata Bibi",
+            "Namaku Alin, aku hidup bertiga bersama Bibi dan Sisil boneka ku, tapi tunggu,,, lebih tepatnya aku hanya hidup berdua bersama sisil, ya,,, Sisil, dia adalah boneka ku, dia sudah ku anggap sebagai teman dekat ku.",
             "Horor",
-            "https://img.wattpad.com/cover/241719476-416-k923397.jpg",
-            "Ramdan_Nahdi",
+            "https://img.wattpad.com/cover/130582718-416-k206500.jpg",
+            "chorrorindonesia",
             40,
             13,
             "public",
-            "ini first paragraph"
+            "Namaku Alin, aku hidup bertiga bersama Bibi dan Sisil boneka ku, tapi tunggu,,, lebih tepatnya aku hanya hidup berdua bersama sisil, ya,,, Sisil, dia adalah boneka ku, dia sudah ku anggap sebagai teman dekat ku."
         ),
         Cerbung(
             2,
-            "FRIENDSHIT",
-            "Hanya kehidupan sehari-hari tentang Kana, cewek super pemales yang tidak mau melakukan semua hal karena dianggap repot. Keseharian Arlan, cowok terlalu rajin yang mau melakukan semua hal yang Kana anggap repot. Juga orang-orang di sekitar mereka, yang tidak percaya dan seringkali dibuat jengkel karena Arlan dan Kana yang tidak peka pada perasaan mereka. Friendship or FRIENDSHIT?!!",
+            "Global Reincarnation: Only I Know The Plot ",
+            "Ini adalah dunia virtual yang terdiri dari berbagai film dan televisi. Semua orang di dunia bekerja keras untuk menaklukkan setiap salinan, berharap mendapatkan hadiah salinan dan menjadi lebih kuat. Chen Ye, yang datang, terkejut menemukan bahwa",
             "Aksi",
-            "https://img.wattpad.com/cover/123301262-512-k856099.jpg",
-            "QueenNakey",
+            "https://img.wattpad.com/cover/281378647-416-k906679.jpg",
+            "Dezel-Kun",
             32,
             8,
             "public",
-            "ini first paragraph"
+            "Ini adalah dunia virtual yang terdiri dari berbagai film dan televisi. Semua orang di dunia bekerja keras untuk menaklukkan setiap salinan, berharap mendapatkan hadiah salinan dan menjadi lebih kuat. Chen Ye, yang datang, terkejut menemukan bahwa"
         ),
         Cerbung(
             3,
-            "Stand Up Comedy",
-            "Cerita seorang komika wanita yang sangat humoris!!",
+            "Transmigrasi Istri Tak Dianggap",
+            "Daisy Mahesa, seorang model terkenal. Ia juga merupakan putri tunggal dari keluarga Mahesa. Menjadi seorang model merupakan mimpinya, namun sayang karena sebuah kecelakaan yang dialaminya membuat ia harus terdampar ditubuh Diana Maheswari.",
             "Comedy",
-            "https://img.wattpad.com/cover/62961295-416-k158891.jpg",
-            "NB_Moonlight",
+            "https://img.wattpad.com/cover/326586438-416-k518399.jpg",
+            "zersela",
             51,
             5,
             "public",
-            "ini first paragraph"
+            "Seorang wanita yang selalu menerima perlakuan buruk dari keluarga suaminya. Bahkan suaminya sendiri tidak pernah menganggapnya. Dan disini lah Daisy, bertekad untuk merubah kehidupan Diana, karena bagaimanapun ia adalah pemilik tubuh Diana yang sekarang. \n" +
+                    "\n" +
+                    "Lalu bagaimanakah cara Daisy mengubah hidup Diana?\n"
         )
     )
 
