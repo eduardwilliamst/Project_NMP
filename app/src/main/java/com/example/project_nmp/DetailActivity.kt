@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.squareup.picasso.Picasso
 
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,7 @@ class DetailActivity : AppCompatActivity() {
 
         if (cerbung != null) {
             val imgResourceId = resources.getIdentifier(cerbung.imageCover, "drawable", packageName)
-            detailImage.setImageResource(imgResourceId)
+            Picasso.get().load(cerbung.imageCover).into(detailImage)
             detailTitle.text = cerbung.title
             detailParagraphs.text = cerbung.paragraphs.toString()
             detailLike.text = cerbung.like.toString()

@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.squareup.picasso.Picasso
 
 class RecyclerViewHolder(
     private val itemView: View
@@ -22,10 +23,10 @@ class RecyclerViewHolder(
         val likeText = itemView.findViewById<TextView>(R.id.likeText)
         val descriptionText = itemView.findViewById<TextView>(R.id.descriptionText)
         val readButton = itemView.findViewById<Button>(R.id.readButton)
-        val createButton = itemView.findViewById<FloatingActionButton>(R.id.fab_create)
 
         // Set data to the views
-        coverImage.setImageResource(imgResourceId)
+        Picasso.get().load(data.imageCover).into(coverImage)
+//        coverImage.setImageResource(imgResourceId)
         titleText.text = data.title
         byText.text = "by ${data.by}"
         paragraphsText.text = data.paragraphs.toString()
