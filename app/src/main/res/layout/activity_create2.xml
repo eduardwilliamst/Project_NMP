@@ -40,18 +40,33 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access Control"
+                android:textSize="16sp"
+                android:paddingEnd="16dp" />
+
+            <RadioGroup
+                android:id="@+id/accessControlRadioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Access Control">
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/publicRadioButton"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/accessControl"
-                    android:inputType="none"
-                    android:focusable="false"
-                    android:clickable="true" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:checked="true"
+                    android:text="Public" />
+
+                <RadioButton
+                    android:id="@+id/privateRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private" />
+            </RadioGroup>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"

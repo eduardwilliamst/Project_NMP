@@ -61,41 +61,27 @@
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.button.MaterialButtonToggleGroup
-                android:id="@+id/toggle_group"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:singleSelection="true"
-                app:checkedButton="@id/all_button">
+                android:layout_height="wrap_content">
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/all_button"
-                    style="?attr/materialButtonOutlinedStyle"
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggle_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All" />
+                    app:singleSelection="true">
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/aksi_button"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Aksi" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/all_button"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/horor_button"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Horor" />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/comedy_button"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kocak" />
-            </com.google.android.material.button.MaterialButtonToggleGroup>
+            </HorizontalScrollView>
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
