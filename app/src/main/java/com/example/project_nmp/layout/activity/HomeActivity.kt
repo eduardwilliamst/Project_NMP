@@ -1,19 +1,22 @@
-package com.example.project_nmp
+package com.example.project_nmp.layout.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.project_nmp.Cerbung
+import com.example.project_nmp.CerbungAdapter
+import com.example.project_nmp.Global
+import com.example.project_nmp.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private var recycler: RecyclerView? = null
 
@@ -21,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
 
         recycler = findViewById(R.id.recycler_view)
 
@@ -66,14 +69,14 @@ class MainActivity : AppCompatActivity() {
                 Cerbung(
                     cerbung.id, // ID
                     cerbung.title, // Title
-                    cerbung.shortDescription, // Short Description
-                    cerbung.genre, // Genre
+                    cerbung.description, // Short Description
+                    cerbung.genre_id, // Genre
                     cerbung.imageCover, // Image Cover URL
-                    cerbung.by, // Author
-                    cerbung.like, // Like Count
+                    cerbung.author, // Author
+                    cerbung.likes, // Like Count
                     cerbung.paragraphs, // Paragraphs Count
                     cerbung.accessControl, // Access Control
-                    cerbung.firstParagraph // First Paragraph
+                    cerbung.firstparagraphs, // First Paragraph
                 )
             )
         }

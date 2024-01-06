@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewAvatarDetail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"
+        android:contentDescription="avatar" />
+
+    <TextView
+        android:id="@+id/textViewUsernameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTotalLikesDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Likes: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewCerbungCountDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerbung Count: 0"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewLatestPostDateDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Post Date: -"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonSeeCerbungs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Cerbungs"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

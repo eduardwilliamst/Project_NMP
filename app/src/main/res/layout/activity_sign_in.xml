@@ -8,7 +8,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:gravity="center"
-    tools:context=".SignInActivity">
+    tools:context=".layout.login.SignInActivity">
 
     <TextView
         android:layout_width="wrap_content"

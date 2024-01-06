@@ -1,14 +1,15 @@
-package com.example.project_nmp
+package com.example.project_nmp.layout.activity
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import androidx.appcompat.widget.AppCompatButton
+import com.example.project_nmp.Global
+import com.example.project_nmp.R
 
 class Create1Activity : AppCompatActivity() {
 

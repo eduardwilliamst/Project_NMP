@@ -1,4 +1,4 @@
-package com.example.project_nmp
+package com.example.project_nmp.layout.activity
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
+import com.example.project_nmp.R
 
 class Create3Activity : AppCompatActivity() {
 
@@ -42,15 +43,8 @@ class Create3Activity : AppCompatActivity() {
         val selectedGenreTextView = findViewById<TextView>(R.id.genre)
         selectedGenreTextView.text = selectedGenre
 
-//        val accessControlTextView = findViewById<TextView>(R.id.acc)
-//        accessControlTextView.text = accessControl
-
-//        val firstParagraphTextView = findViewById<TextView>(R.id.firstParagraph)
-//        firstParagraphTextView.text = firstParagraph
-
-
         buttonSave?.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
         buttonPrev?.setOnClickListener{
             startActivity(Intent(this, Create2Activity::class.java))

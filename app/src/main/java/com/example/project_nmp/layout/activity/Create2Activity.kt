@@ -1,4 +1,4 @@
-package com.example.project_nmp
+package com.example.project_nmp.layout.activity
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.RadioGroup
 import androidx.appcompat.widget.AppCompatButton
+import com.example.project_nmp.R
 
 class Create2Activity : AppCompatActivity() {
 
@@ -50,7 +51,7 @@ class Create2Activity : AppCompatActivity() {
             val firstParagraph = (findViewById<EditText>(R.id.firstParagraph)).text.toString()
 
             // Menyimpan data menggunakan SharedPreferences
-            Create2Activity.saveData(this, accessControl, firstParagraph)
+            saveData(this, accessControl, firstParagraph)
 
             // Pindah ke Create3Activity
             startActivity(Intent(this, Create3Activity::class.java))

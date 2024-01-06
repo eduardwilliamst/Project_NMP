@@ -9,11 +9,11 @@ class RecyclerDiffUtilCallback : DiffUtil.ItemCallback<Cerbung>() {
 
     override fun areContentsTheSame(oldItem: Cerbung, newItem: Cerbung): Boolean {
         return oldItem.title == newItem.title &&
-                oldItem.shortDescription == newItem.shortDescription &&
-                oldItem.genre == newItem.genre &&
+                oldItem.description == newItem.description &&
+                oldItem.genre_id == newItem.genre_id &&
                 oldItem.imageCover == newItem.imageCover &&
-                oldItem.by == newItem.by &&
-                oldItem.like == newItem.like &&
+                oldItem.author == newItem.author &&
+                oldItem.likes == newItem.likes &&
                 oldItem.paragraphs == newItem.paragraphs
     }
 

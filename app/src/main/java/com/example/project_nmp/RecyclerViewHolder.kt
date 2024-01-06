@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.example.project_nmp.layout.activity.DetailActivity
 import com.squareup.picasso.Picasso
 
 class RecyclerViewHolder(
@@ -24,14 +24,16 @@ class RecyclerViewHolder(
         val descriptionText = itemView.findViewById<TextView>(R.id.descriptionText)
         val readButton = itemView.findViewById<Button>(R.id.readButton)
 
+
         // Set data to the views
         Picasso.get().load(data.imageCover).into(coverImage)
-//        coverImage.setImageResource(imgResourceId)
+
+        //coverImage.setImageResource(imgResourceId)
         titleText.text = data.title
-        byText.text = "by ${data.by}"
+        byText.text = "by ${data.author}"
         paragraphsText.text = data.paragraphs.toString()
-        likeText.text = data.like.toString()
-        descriptionText.text = data.shortDescription
+        likeText.text = data.likes.toString()
+        descriptionText.text = data.description
 
         // Handle click event for read button (gunakan cerbung.id untuk navigasi)
         readButton.setOnClickListener {
